@@ -1,0 +1,25 @@
+@value makerWhite, makerLightGrey from '../../common/colors.css';
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: makerWhite;
+    padding: 1em;
+    position: relative;
+}
+.logo {
+    width: 7em;
+}
+
+.logout {
+    position: absolute;
+    right: 3em;
+    top: 1em;
+    padding: 1em;
+    border-radius: 50%;
+    background-color: makerLightGrey;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+
+}

@@ -1,0 +1,16 @@
+@value makerWhite, makerGrey from './common/colors.css';
+
+/* 박스 크기 이상 생길떄 */
+* {
+    box-sizing: border-box;
+}
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: makerGrey;
+
+
+}

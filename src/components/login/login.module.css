@@ -1,0 +1,25 @@
+
+.login {
+    width: 40em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0.7rem;
+    
+}
+.item {
+    margin-bottom: 0.5em;
+}
+.button {
+    width: 50%;
+    height: 2.5em;
+    font-size: 1.2rem;
+}
