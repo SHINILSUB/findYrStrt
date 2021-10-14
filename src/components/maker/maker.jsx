@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 import Footer from '../footer/footer';
 import Header from '../header/header';
+import Editor from '../editor/editor';
+import Preview from '../preview/preview';
 import styles from './maker.module.css';
 
 const Maker = ({authService}) => {
@@ -15,7 +17,6 @@ const Maker = ({authService}) => {
             squat1rm: '205lb',
             benchpress: '155lb',
             deadlift: '205lb',
-            theme: 'light',
             fileName: 'sean',
             fileUrl: 'sean.png'
         },
@@ -28,7 +29,6 @@ const Maker = ({authService}) => {
             squat1rm: '205lb',
             benchpress: '155lb',
             deadlift: '205lb',
-            theme: 'light',
             fileName: 'sean',
             fileUrl: 'sean.png'
         },
@@ -41,9 +41,8 @@ const Maker = ({authService}) => {
             squat1rm: '205lb',
             benchpress: '155lb',
             deadlift: '205lb',
-            theme: 'light',
             fileName: 'sean',
-            fileUrl: 'sean.png'
+            fileUrl: 'null'
         },
     ])
     const history = useHistory()
@@ -61,7 +60,10 @@ const Maker = ({authService}) => {
     return(
         <section className={styles.maker}>
             <Header onLogout={onLogout}/>
-            <div className={styles.container}></div>
+            <div className={styles.container}>
+                <Editor cards={cards}/>
+                <Preview cards={cards}/>
+            </div>
             <Footer/>
         </section>
     );

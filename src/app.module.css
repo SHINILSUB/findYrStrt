@@ -1,4 +1,4 @@
-@value makerWhite, makerGrey from './common/colors.css';
+@value  makerGrey from './common/colors.css';
 
 /* 박스 크기 이상 생길떄 */
 * {
