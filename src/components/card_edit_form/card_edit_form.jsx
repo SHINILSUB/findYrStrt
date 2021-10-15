@@ -3,7 +3,7 @@ import Button from '../button/button';
 import styles from "./card_edit_form.module.css";
 import ImageFileInput from '../image_file_input/image_file_input';
 
-const onsubmit = () => {};
+const onSubmit = () => {};
 const CardEditForm = ({card}) => {
     const {
         name,
@@ -19,7 +19,6 @@ const CardEditForm = ({card}) => {
       return (
           <form className={styles.form}>
               <input className={styles.input} type="text" name="name" value={name}/>
-              <input className={styles.input} type="text" name="type" value={type}/>
               <select className={styles.select} name="type" value={type}>
                   <option value="crossfit">crossfit</option>
                   <option value="bodybuild">bodybuild</option>
@@ -32,8 +31,9 @@ const CardEditForm = ({card}) => {
               <input className={styles.input} type="text" name="deadlift" value={deadlift}/>
               <div className={styles.fileInput}>
               <ImageFileInput/>
-              <Button name='Delete' onClick={onsubmit}/>
               </div>
+              <Button name="Delete" onClick={onSubmit}/>
+              
               
               
 
