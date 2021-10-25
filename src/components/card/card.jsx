@@ -10,10 +10,9 @@ const Card = ({ card }) => {
     squat1rm,
     benchpress,
     deadlift,
-    fileName,
-    fileUrl,
+    fileURL,
   } = card;
-  const url = fileUrl||DEFAULT_IMAGE;
+  const url = fileURL||DEFAULT_IMAGE;
   return (
     <li className={`${styles.card} ${getStyles(type)}`}>
       <img className={styles.avatar} src={url} alt="avtr" />

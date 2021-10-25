@@ -18,7 +18,7 @@ const Maker = ({ FileInput, authService }) => {
       benchpress: "155lb",
       deadlift: "205lb",
       fileName: "sean",
-      fileUrl: "sean.png",
+      fileURL: "sean.png",
     },
     2: {
       id: "2",
@@ -30,7 +30,7 @@ const Maker = ({ FileInput, authService }) => {
       benchpress: "155lb",
       deadlift: "205lb",
       fileName: "sean",
-      fileUrl: "sean.png",
+      fileURL: "sean.png",
     },
     3: {
       id: "3",
@@ -42,7 +42,7 @@ const Maker = ({ FileInput, authService }) => {
       benchpress: "155lb",
       deadlift: "205lb",
       fileName: "sean",
-      fileUrl: "null",
+      fileURL: "null",
     },
   });
   const history = useHistory();

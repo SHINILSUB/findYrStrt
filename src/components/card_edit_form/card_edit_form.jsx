@@ -4,7 +4,7 @@ import styles from "./card_edit_form.module.css";
 
 
 
-const CardEditForm = ({FileInput, onFileChange,  card, updateCard, deleteCard}) => {
+const CardEditForm = ({FileInput, card, updateCard, deleteCard}) => {
     const {
         name,
         type,
@@ -13,8 +13,7 @@ const CardEditForm = ({FileInput, onFileChange,  card, updateCard, deleteCard}) 
         squat1rm,
         benchpress,
         deadlift,
-        fileName,
-        fileUrl,
+        fileName
       } = card;
       const onFileChange = file => {
           updateCard({
