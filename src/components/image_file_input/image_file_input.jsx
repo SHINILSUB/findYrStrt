@@ -20,7 +20,7 @@ const ImageFileInput = ({ imageUploader, name, onFileChange }) => {
     });
   };
   return (
-    <div className={styles.continer}>
+    <div className={styles.container}>
       <input
         ref={inputRef}
         className={styles.input}
