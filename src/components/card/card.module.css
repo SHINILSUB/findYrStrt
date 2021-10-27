@@ -5,7 +5,8 @@
   align-items: center;
   width: 100%;
   border-radius: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
   background-color: yellow;
   box-shadow: makerShadow;
   max-width: 30rem;
@@ -21,7 +22,7 @@
 }
 .card.colorful {
   background-color: makerColorful;
-  color: makerWhite;
+  color: makerBlack;
 }
 .avatar {
   width: 10em;
